@@ -10,6 +10,8 @@ export namespace Components {
     }
     interface NavButton {
     }
+    interface SynopsisBody {
+    }
 }
 declare global {
     interface HTMLEpisodeButtonElement extends Components.EpisodeButton, HTMLStencilElement {
@@ -24,9 +26,16 @@ declare global {
         prototype: HTMLNavButtonElement;
         new (): HTMLNavButtonElement;
     };
+    interface HTMLSynopsisBodyElement extends Components.SynopsisBody, HTMLStencilElement {
+    }
+    var HTMLSynopsisBodyElement: {
+        prototype: HTMLSynopsisBodyElement;
+        new (): HTMLSynopsisBodyElement;
+    };
     interface HTMLElementTagNameMap {
         "episode-button": HTMLEpisodeButtonElement;
         "nav-button": HTMLNavButtonElement;
+        "synopsis-body": HTMLSynopsisBodyElement;
     }
 }
 declare namespace LocalJSX {
@@ -34,9 +43,12 @@ declare namespace LocalJSX {
     }
     interface NavButton {
     }
+    interface SynopsisBody {
+    }
     interface IntrinsicElements {
         "episode-button": EpisodeButton;
         "nav-button": NavButton;
+        "synopsis-body": SynopsisBody;
     }
 }
 export { LocalJSX as JSX };
@@ -45,6 +57,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "episode-button": LocalJSX.EpisodeButton & JSXBase.HTMLAttributes<HTMLEpisodeButtonElement>;
             "nav-button": LocalJSX.NavButton & JSXBase.HTMLAttributes<HTMLNavButtonElement>;
+            "synopsis-body": LocalJSX.SynopsisBody & JSXBase.HTMLAttributes<HTMLSynopsisBodyElement>;
         }
     }
 }
