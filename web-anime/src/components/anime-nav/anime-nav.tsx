@@ -11,11 +11,11 @@ export class AnimeNav {
       <Host>
         <nav>
           <img src="" alt="" />
-          <anime-button>Inicio</anime-button>
-          <anime-button>Horarios</anime-button>
-          <anime-button>Directorio</anime-button>
-          <anime-button>Recientes</anime-button>
-          <input type='text'/>
+          <nav-button>Inicio</nav-button>
+          <nav-button>Horarios</nav-button>
+          <nav-button>Directorio</nav-button>
+          <nav-button>Recientes</nav-button>
+          <input-search/>
           <img src="" alt="" id=""/>
         </nav>
       </Host>

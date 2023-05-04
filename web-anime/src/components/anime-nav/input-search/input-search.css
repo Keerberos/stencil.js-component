@@ -1,0 +1,45 @@
+:host {
+  display: block;
+}
+
+input[type="search"]{
+  height: 40px;
+  margin: 5px;
+  padding: 0 10px;
+  background-color: var(--lemonchiffon);
+  border: none;
+  border-radius: 5px;
+}
+
+/* button {
+  height: 30px;
+  margin: 5px;
+  padding: 0 10px;
+  background-color: var(--lemonchiffon);
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: wheat;
+  cursor: pointer;
+} */
+
+button {
+  border: 0;
+  border-radius: 8px;
+  color: var(--black);
+  margin: 5px;
+  padding: 0px;
+  cursor: pointer;
+  transition: .3s;
+}
+button span {
+  background-color: var(--lemonchiffon);
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: .3s;
+}
+button:hover span {
+  background: var(--lemonchiffon);
+}
+button:active {
+  transform: scale(0.9);
+}

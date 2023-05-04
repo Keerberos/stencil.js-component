@@ -1,16 +1,16 @@
 import { Component, Host, h } from '@stencil/core';
 
 @Component({
-  tag: 'nav-button',
-  styleUrl: 'nav-button.css',
+  tag: 'cap-button',
+  styleUrl: 'cap-button.css',
   shadow: true,
 })
-export class NavButton {
+export class CapButton {
   render() {
     return (
       <Host>
         <button>
-          <span><slot></slot></span>
+          <slot></slot>
         </button>
       </Host>
     );

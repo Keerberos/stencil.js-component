@@ -6,45 +6,97 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface AnimeButton {
-    }
     interface AnimeNav {
+    }
+    interface AnimeSynopsis {
+    }
+    interface CapButton {
+    }
+    interface InputSearch {
+    }
+    interface NavButton {
+    }
+    interface SuperButton {
     }
 }
 declare global {
-    interface HTMLAnimeButtonElement extends Components.AnimeButton, HTMLStencilElement {
-    }
-    var HTMLAnimeButtonElement: {
-        prototype: HTMLAnimeButtonElement;
-        new (): HTMLAnimeButtonElement;
-    };
     interface HTMLAnimeNavElement extends Components.AnimeNav, HTMLStencilElement {
     }
     var HTMLAnimeNavElement: {
         prototype: HTMLAnimeNavElement;
         new (): HTMLAnimeNavElement;
     };
+    interface HTMLAnimeSynopsisElement extends Components.AnimeSynopsis, HTMLStencilElement {
+    }
+    var HTMLAnimeSynopsisElement: {
+        prototype: HTMLAnimeSynopsisElement;
+        new (): HTMLAnimeSynopsisElement;
+    };
+    interface HTMLCapButtonElement extends Components.CapButton, HTMLStencilElement {
+    }
+    var HTMLCapButtonElement: {
+        prototype: HTMLCapButtonElement;
+        new (): HTMLCapButtonElement;
+    };
+    interface HTMLInputSearchElement extends Components.InputSearch, HTMLStencilElement {
+    }
+    var HTMLInputSearchElement: {
+        prototype: HTMLInputSearchElement;
+        new (): HTMLInputSearchElement;
+    };
+    interface HTMLNavButtonElement extends Components.NavButton, HTMLStencilElement {
+    }
+    var HTMLNavButtonElement: {
+        prototype: HTMLNavButtonElement;
+        new (): HTMLNavButtonElement;
+    };
+    interface HTMLSuperButtonElement extends Components.SuperButton, HTMLStencilElement {
+    }
+    var HTMLSuperButtonElement: {
+        prototype: HTMLSuperButtonElement;
+        new (): HTMLSuperButtonElement;
+    };
     interface HTMLElementTagNameMap {
-        "anime-button": HTMLAnimeButtonElement;
         "anime-nav": HTMLAnimeNavElement;
+        "anime-synopsis": HTMLAnimeSynopsisElement;
+        "cap-button": HTMLCapButtonElement;
+        "input-search": HTMLInputSearchElement;
+        "nav-button": HTMLNavButtonElement;
+        "super-button": HTMLSuperButtonElement;
     }
 }
 declare namespace LocalJSX {
-    interface AnimeButton {
-    }
     interface AnimeNav {
     }
+    interface AnimeSynopsis {
+    }
+    interface CapButton {
+    }
+    interface InputSearch {
+    }
+    interface NavButton {
+    }
+    interface SuperButton {
+    }
     interface IntrinsicElements {
-        "anime-button": AnimeButton;
         "anime-nav": AnimeNav;
+        "anime-synopsis": AnimeSynopsis;
+        "cap-button": CapButton;
+        "input-search": InputSearch;
+        "nav-button": NavButton;
+        "super-button": SuperButton;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "anime-button": LocalJSX.AnimeButton & JSXBase.HTMLAttributes<HTMLAnimeButtonElement>;
             "anime-nav": LocalJSX.AnimeNav & JSXBase.HTMLAttributes<HTMLAnimeNavElement>;
+            "anime-synopsis": LocalJSX.AnimeSynopsis & JSXBase.HTMLAttributes<HTMLAnimeSynopsisElement>;
+            "cap-button": LocalJSX.CapButton & JSXBase.HTMLAttributes<HTMLCapButtonElement>;
+            "input-search": LocalJSX.InputSearch & JSXBase.HTMLAttributes<HTMLInputSearchElement>;
+            "nav-button": LocalJSX.NavButton & JSXBase.HTMLAttributes<HTMLNavButtonElement>;
+            "super-button": LocalJSX.SuperButton & JSXBase.HTMLAttributes<HTMLSuperButtonElement>;
         }
     }
 }

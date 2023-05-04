@@ -1,18 +1,20 @@
 import { Component, Host, h } from '@stencil/core';
 
 @Component({
-  tag: 'nav-button',
-  styleUrl: 'nav-button.css',
+  tag: 'super-button',
+  styleUrl: 'super-button.css',
   shadow: true,
 })
-export class NavButton {
+export class SuperButton {
+
   render() {
     return (
       <Host>
         <button>
-          <span><slot></slot></span>
+          <span>super botón</span>
         </button>
       </Host>
     );
   }
+
 }
