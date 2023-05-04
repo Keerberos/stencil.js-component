@@ -1,0 +1,14 @@
+:host {
+  display: block;
+}
+
+.nav-button {
+  height: 40px;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: var(--dodgerblue);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
