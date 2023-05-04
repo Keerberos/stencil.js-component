@@ -1,0 +1,26 @@
+:host {
+  display: block;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background-color: var(--skyblue);
+  color: var(--black);
+}
+
+img {
+  height: 40px;
+  margin: 5px;
+}
+
+input[type="text"] {
+  height: 40px;
+  margin: 5px;
+  padding: 0 10px;
+  background-color: var(--lemonchiffon);
+  border: none;
+  border-radius: 5px;
+}

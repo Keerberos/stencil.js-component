@@ -1,15 +1,15 @@
 import { Component, Host, h } from '@stencil/core';
 
 @Component({
-  tag: 'nav-button',
+  tag: 'anime-button',
   styleUrl: 'nav-button.css',
   shadow: true,
 })
-export class NavButton {
+export class AnimeButton {
   render() {
     return (
       <Host>
-        <button class="nav-button">
+        <button>
           <slot></slot>
         </button>
       </Host>

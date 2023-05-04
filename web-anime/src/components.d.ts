@@ -6,45 +6,45 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface EpisodeButton {
+    interface AnimeButton {
     }
-    interface NavButton {
+    interface AnimeNav {
     }
 }
 declare global {
-    interface HTMLEpisodeButtonElement extends Components.EpisodeButton, HTMLStencilElement {
+    interface HTMLAnimeButtonElement extends Components.AnimeButton, HTMLStencilElement {
     }
-    var HTMLEpisodeButtonElement: {
-        prototype: HTMLEpisodeButtonElement;
-        new (): HTMLEpisodeButtonElement;
+    var HTMLAnimeButtonElement: {
+        prototype: HTMLAnimeButtonElement;
+        new (): HTMLAnimeButtonElement;
     };
-    interface HTMLNavButtonElement extends Components.NavButton, HTMLStencilElement {
+    interface HTMLAnimeNavElement extends Components.AnimeNav, HTMLStencilElement {
     }
-    var HTMLNavButtonElement: {
-        prototype: HTMLNavButtonElement;
-        new (): HTMLNavButtonElement;
+    var HTMLAnimeNavElement: {
+        prototype: HTMLAnimeNavElement;
+        new (): HTMLAnimeNavElement;
     };
     interface HTMLElementTagNameMap {
-        "episode-button": HTMLEpisodeButtonElement;
-        "nav-button": HTMLNavButtonElement;
+        "anime-button": HTMLAnimeButtonElement;
+        "anime-nav": HTMLAnimeNavElement;
     }
 }
 declare namespace LocalJSX {
-    interface EpisodeButton {
+    interface AnimeButton {
     }
-    interface NavButton {
+    interface AnimeNav {
     }
     interface IntrinsicElements {
-        "episode-button": EpisodeButton;
-        "nav-button": NavButton;
+        "anime-button": AnimeButton;
+        "anime-nav": AnimeNav;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "episode-button": LocalJSX.EpisodeButton & JSXBase.HTMLAttributes<HTMLEpisodeButtonElement>;
-            "nav-button": LocalJSX.NavButton & JSXBase.HTMLAttributes<HTMLNavButtonElement>;
+            "anime-button": LocalJSX.AnimeButton & JSXBase.HTMLAttributes<HTMLAnimeButtonElement>;
+            "anime-nav": LocalJSX.AnimeNav & JSXBase.HTMLAttributes<HTMLAnimeNavElement>;
         }
     }
 }
