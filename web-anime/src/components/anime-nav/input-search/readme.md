@@ -1,4 +1,4 @@
-# nav-button
+# input-search
 
 
 
@@ -9,13 +9,13 @@
 
 ### Used by
 
- - [anime-nav](../../anime-nav)
+ - [anime-nav](..)
 
 ### Graph
 ```mermaid
 graph TD;
-  anime-nav --> nav-button
-  style nav-button fill:#f9f,stroke:#333,stroke-width:4px
+  anime-nav --> input-search
+  style input-search fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------
