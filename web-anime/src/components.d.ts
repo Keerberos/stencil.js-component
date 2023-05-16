@@ -7,10 +7,6 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AnimeNav {
-        "directorios": string;
-        "horarios": string;
-        "inicio": string;
-        "recientes": string;
     }
     interface AnimeSynopsis {
     }
@@ -71,10 +67,6 @@ declare global {
 }
 declare namespace LocalJSX {
     interface AnimeNav {
-        "directorios"?: string;
-        "horarios"?: string;
-        "inicio"?: string;
-        "recientes"?: string;
     }
     interface AnimeSynopsis {
     }

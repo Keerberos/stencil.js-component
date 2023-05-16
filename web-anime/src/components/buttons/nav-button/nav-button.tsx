@@ -9,9 +9,13 @@ export class NavButton {
   render() {
     return (
       <Host>
-        <button>
-          <span><slot></slot></span>
-        </button>
+        <div class="container">
+          <button>
+            <span>
+              <slot></slot>
+            </span>
+          </button>
+        </div>
       </Host>
     );
   }

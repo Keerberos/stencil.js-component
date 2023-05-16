@@ -5,19 +5,6 @@
 <!-- Auto Generated Below -->
 
 
-## Dependencies
-
-### Used by
-
- - [anime-nav](../../anime-nav)
-
-### Graph
-```mermaid
-graph TD;
-  anime-nav --> nav-button
-  style nav-button fill:#f9f,stroke:#333,stroke-width:4px
-```
-
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*

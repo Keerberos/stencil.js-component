@@ -36,3 +36,8 @@ button:hover span {
 button:active {
   transform: scale(0.9);
 }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
